@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+
+
+        
+        
+
+       <div><iframe height="500" width="800" id="myIframe" frameborder="0">
+    </iframe> </div>
+       
+  
+        
+
+        
+
+
+        
+
+</head>
+
+
+
+<body>
+
+    <input placeholder="Paste embedded YT link" id="link" type="text">
+    
+    <button onclick="Fc()" id="btn" >Enter</button>
+    <script>
+
+function Fc()
+{
+    
+var url = document.getElementById("link").value;
+
+    let myIframe = document.getElementById("myIframe");
+        let url_string = url;
+        let width = "500";
+        let height = "400";
+        let geo = "uk";
+
+        let adsURL = url_string+"?geo="+geo+"&size="+width+"x"+height;
+        myIframe.src = adsURL;
+
+}
+
+if(event.keyCode === 13)
+{
+    ("btn").click();
+}
+
+        
+     
+    </script>
+
+
+</body>
+
+
+
+
+
+
+
+</html>
